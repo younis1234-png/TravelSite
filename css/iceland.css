@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+}
+/* header start */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 65px;
+}
+.nav__logo {
+  color: #2d3982;
+  font-size: 1.5rem;
+  margin-left: 3%;
+}
+.nav-list {
+  display: flex;
+  margin-right: 90px;
+}
+.nav__item {
+  margin-left: 40px;
+  list-style-type: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: #393939;
+  font-size: 0.88rem;
+}
+.nav__link:hover {
+  border-bottom: 2px solid #e37889;
+  color: #e37889;
+}
+.nav__link--active {
+  border-bottom: 2px solid #e37889;
+}
+/* Header nav end */
+
+/* section start */
+.section {
+  margin-top: -4.5rem;
+  background-image: url("../assets/iceland.jpg");
+  height: 800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.section-heading {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  width: 118%;
+  padding: 4rem;
+}
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50vh;
+  width: 90vw;
+  flex-wrap: wrap;
+  margin: -5% 5%;
+}
+.container-card {
+  background-color: white;
+  padding: 2rem;
+  height: 26rem;
+  width: 18rem;
+  border-radius: 5px;
+}
+.container-card__heading {
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: #101d42;
+}
+.container-card__item {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 1.6rem;
+  border-radius: 5px;
+  text-align: center;
+}
+/* section end */
